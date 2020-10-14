@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>CSS3瀑布流</title>
+
+    <style>
+
+    /*大层*/
+
+    .container{width:100%;margin: 0 auto;}
+
+    /*瀑布流层*/
+
+    .waterfall{
+
+        -moz-column-count:4; /* Firefox */
+
+        -webkit-column-count:4; /* Safari 和 Chrome */
+
+        column-count:4;
+
+        -moz-column-gap: 1em;
+
+      -webkit-column-gap: 1em;
+
+      column-gap: 1em;
+
+    }
+
+    /*一个内容层*/
+
+    .item{
+
+      padding: 1em;
+
+      margin: 0 0 1em 0;
+
+      -moz-page-break-inside: avoid;
+
+      -webkit-column-break-inside: avoid;
+
+      break-inside: avoid;
+
+     border: 1px solid #000;
+
+    }
+
+    .item img{
+
+        width: 100%;
+
+        margin-bottom:10px;
+
+    }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div>
+
+        <div>
+
+            <div>
+
+                <a href="mofangyouxi/mofangyouxi.html"><img src="mofangyouxi/tupian.png"></a>
+                <p>来玩魔方吧！！！</p>
+				
+           </div>
+
+            <div>
+
+                <a href="xiangqi/xiangqi.html"><img src="xiangqi/tupian.png"></a>
+
+                <p>你们到底谁更厉害呢？？？</p>
+
+           </div>
+
+            <div>
+
+                <a href="chuangguan/chuangguan.html"><img src="chuangguan/tupian.png"></a>
+
+                <p>你能闯几关呢？？？</p>
+
+           </div>
+
+            <div>
+
+                <a href="zhiwudazhanjiangshi/zhiwudazhanjiangshi.html"><img src="zhiwudazhanjiangshi/tupian.png"></a>
+
+                <p>我们来打僵尸吧！！！</p>
+
+           </div>
+
+			<div>
+
+                <a href="paoku/paoku.html"><img src="paoku/tupian.png"></a>
+
+                <p>到底能跑多久呢？？？</p>
+
+           </div>
+		   <div>
+
+                <a href="tafang/tafang.html"><img src="tafang/tupian.png"></a>
+
+                <p>摧毁敌方基地！！！</p>
+
+           </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
